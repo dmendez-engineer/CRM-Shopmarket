@@ -80,18 +80,20 @@
                 url:'registerBD.php',
                 data:{name:name,lastName:lastName,email:email,password:password},
                 success:function(res){
-                    console.log("Res:",res);
+                
                     let info=JSON.parse(res);
-                    console.log("Info: ",info);
+                    
                    if(info.status==200){
                     if(info.resultExecute==0){
                         alert("This email already exist!");
+                        return;
                     }else{
                         alert(info.message);
                     }
                     
                    }else{
-                    alert(info.message);                    
+                    alert(info.message);     
+                    return;               
                    }
                     
                    

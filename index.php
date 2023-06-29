@@ -10,8 +10,11 @@
    
     <title>Document</title>
 </head>
-<body class="body w-75 mx-auto min-h-screen">
-    <div class="header"><h1>Login Window</h1></div>
+<body class="body w-75 mx-auto min-h-screen " style="background-color: gray;">
+    <div class="header">
+        <h1>Login Window</h1>
+        
+    </div>
 
     <div class="container mt-5">
         <div>
@@ -43,7 +46,8 @@
 </html>
 <script type="text/javascript">
     $(document).ready(function(){
-       $("#login").click(function(){
+      
+        $("#login").click(function(){
             let username=$("#username").val();
             let password=$("#password").val();
 
@@ -53,7 +57,7 @@
                 url:"loginBD.php",
                 data:{username:username,password:password},
                 success:function(res){
-                    info=JSON.parse(res);
+                    let info=JSON.parse(res);
                     console.log("LOGIN: ",info);
 
                     if(info.resultExecute!==null){
