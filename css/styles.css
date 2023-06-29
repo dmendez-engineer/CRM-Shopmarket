@@ -1,0 +1,33 @@
+.header{
+    background-color: greenyellow;
+    padding: 10px;
+}
+.login{
+    background-color: rgb(193, 238, 238);
+    box-shadow: 10px 10px lightblue;
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.loginForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.credentials{
+    border-radius: 10px;
+    padding: 10px;
+}
+.linkCreateAccount{
+    font-size: 25px;
+    cursor: pointer;
+
+    
+}
+.linkCreateAccount:hover{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: burlywood;
+}
