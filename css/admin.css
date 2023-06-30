@@ -4,6 +4,10 @@
     display: flex;
     
 }
+.username{
+    color: rgb(234, 113, 113);
+    font-style: oblique;
+}
 .title{
     margin:auto;
 }

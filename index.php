@@ -1,3 +1,18 @@
+<?php
+/*$url="https://restcountries.com/v3.1/alpha/col";
+
+$ch=curl_init();
+curl_setopt($ch,CURLOPT_URL,$url);
+curl_exec($ch);
+
+if(curl_errno($ch)){
+    echo "There was an error: ".curl_error($ch);
+    curl_close($ch);
+}else{
+
+}*/
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

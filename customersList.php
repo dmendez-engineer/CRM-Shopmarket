@@ -22,7 +22,7 @@
                 <div class="menuItems">
                     <h2 class="item"><a class="menuHref" href="admin.php">Admin Module</a></h2>
                             
-                        <h2 class="item"><a class="menuHref" href="optionMenu.html">Option Menu</a></h2>
+                        <h2 class="item"><a class="menuHref" href="optionMenu.php">Option Menu</a></h2>
                         <h2 class="item"><a class="menuHref" >Send an email</a></h2>
                         <h2 class="item"><a class="menuHref" >Contact</a></h2>
                         <h2 class="item"><a class="menuHref" >Maintain</a></h2>

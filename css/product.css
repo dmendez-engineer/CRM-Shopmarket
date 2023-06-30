@@ -1,0 +1,15 @@
+.product{
+    padding: 8rem;
+    margin-left: auto;
+    margin-right: 100px;
+    background-color: rgb(186, 181, 181);
+    border-radius: 20px;
+    box-shadow: 10px 10px rgb(153, 156, 157);
+
+}
+.content{
+    margin-top: 20px;
+}
+.category{
+    font-size: x-large;
+}

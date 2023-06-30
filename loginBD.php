@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 
 include("./connectMySQL.php");
 include("./Models/Result.php");
@@ -12,7 +12,7 @@ include("./Models/Result.php");
     try{
         $execute=mysqli_query($conn,"call login('{$username}','{$password}')") or die("There was an error");
         $execute=$execute->fetch_assoc();
-       
+        $_SESSION["customerLogged"]=json_encode($execute);
         if($execute!=null){
             $result= new Result(200,"Sucessfull",$execute);
         }else{

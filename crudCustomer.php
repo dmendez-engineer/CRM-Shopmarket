@@ -2,7 +2,7 @@
 
 
 
-include("customer.php");
+include("./Models/customer.php");
 include("connectMySQL.php");
 include("./Models/Result.php");
 
