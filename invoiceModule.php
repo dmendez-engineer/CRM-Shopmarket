@@ -13,18 +13,7 @@ foreach($result as $row){
 
 }
 
-
-$url="https://api.cambio.today/v1/quotes/CRC/USD/json?quantity=1000&key=42615|HK_Z~ccEeB4WXq6T77r93sbxhjB7mdrf";
-
-    $ch=curl_init();
-    curl_setopt($ch,CURLOPT_URL,$url);
-    curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
-    $converted=curl_exec($ch);
-    curl_close($ch);
-    $decode=json_decode($converted,true);
-    var_dump($decode);
-    echo "<br><br>";
-echo $decode['result']['updated'];
+echo file_exists("changeesDivisesRequests.txt")
 
 ?>
 <!DOCTYPE html>
