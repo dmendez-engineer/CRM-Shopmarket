@@ -13,7 +13,6 @@ foreach($result as $row){
 
 }
 
-echo file_exists("changeesDivisesRequests.txt")
 
 ?>
 <!DOCTYPE html>

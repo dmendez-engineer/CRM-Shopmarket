@@ -10,6 +10,18 @@ if(isset($_GET['change'])){
     $converted=curl_exec($ch);
     curl_close($ch);
 
+    
+    writetxt($converted);
+    
+
+    echo $converted;
+}
+
+
+
+function writetxt($converted){
+
+    
     $phpObject=json_decode($converted,true);
     $dateChange=$phpObject['result']['updated'];
     $value=$phpObject['result']['value'];
@@ -32,11 +44,5 @@ if(isset($_GET['change'])){
         fwrite($file,"\n");
         fclose($file);
     }
-
-    
-
-    echo $converted;
 }
-
-
 ?>
