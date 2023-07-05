@@ -52,7 +52,7 @@
                         </div>
     
                         <div class="col mt-5">
-                            <a class="linkCreateAccount mt-5" href="customersList.html">Back to the Customer's list</a>
+                            <a class="linkCreateAccount mt-5" href="customersList.php">Back to the Customer's list</a>
     
                         </div>
                         <input  value="insert" name="method" style="display: none;"/>
@@ -86,7 +86,7 @@
                 data:{id:id,getOneCustomer:1},
                 success:function(res){
                     let customer=JSON.parse(res);
-                    console.log("GET ONE CUSTOMTER",customer);
+                   
                     $("#name").val(customer.name);
                     $("#lastName").val(customer.lastName);
                     $("#nid").val(customer.nid);
@@ -110,10 +110,10 @@
                     url:"crudCustomer.php",
                     data:{name:name,lastName:lastName,nid:nid,insert:1},
                     success:function(res){
-                        console.log("RES: ",res)
+                        
                         var info=JSON.parse(res);
 
-                        console.log("INFO: ",info);
+                        
                         if(info.status==404){
                             alert(info.message);
                             $("#name").val("");

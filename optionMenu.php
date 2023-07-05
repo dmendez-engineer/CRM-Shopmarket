@@ -40,7 +40,7 @@ $customerLogged=json_decode($customerLogged);
         <div class="col">
             <div class=" text-center">
                 <div class="row row-cols-4 mt-10">
-                  <div class="col mt-5"><a class="imagenHref"><img src="./img/carrito-de-compras.png"/ width="100px" height="100px"></a></div>
+                  <div class="col mt-5"><a class="imagenHref" href="./invoiceModule.php"><img src="./img/carrito-de-compras.png"/ width="100px" height="100px"></a></div>
                   <div class="col mt-5"><a class="imagenHref" href="./customersList.php"><img src="./img/cliente.png"/ width="100px" height="100px"></a></div>
                   <div class="col mt-5"><a class="imagenHref" href="./productList.php"><img src="./img/product.png"/ width="100px" height="100px"></a></div>
                   <div class="col mt-5"><a class="imagenHref"><img src="./img/services.png"/ width="100px" height="100px"></a></div>

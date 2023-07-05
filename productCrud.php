@@ -45,5 +45,14 @@ if(isset($_POST['postProduct'])){
 		echo json_encode($result);
     }
 }
+if(isset($_POST['getProducts'])){
+    try {
+        $execute=mysqli_query($conn,"call getProducts()");
+        $result=$execute->fetch_all(MYSQLI_ASSOC);
+        echo json_encode($result);
+    } catch (\Throwable $th) {
+       
+    }
+}
 
 ?>
